@@ -617,7 +617,7 @@ border-top: none;
     right: 24px;
     height: 24px;
     width: 24px;
-    border-radius: 50px;
+    border-radius: 50%;
     padding: 0;
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -657,13 +657,13 @@ border-top: none;
     display: block;
     margin-bottom: 4px;
     font-size: 12px;
-    line-height: 1.8;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8E8F99;
 }
 
 .modal-field {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .modal-input-wrap {
@@ -678,6 +678,7 @@ border-top: none;
     padding-left: 38px;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: transparent;
 }
 
 .modal-input:focus {
@@ -705,6 +706,11 @@ border-top: none;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     resize: none;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4), rgba(46, 47, 66, 0.4);
+    background-color: transparent;
 }
 
 .modal-textarea:focus {
@@ -717,12 +723,14 @@ border-top: none;
 
 .check-text {
     font-size: 12px;
-    line-height: 1.8;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8E8F99;
     display: flex;
     align-items: center;
+    margin-bottom: 24px;
 }
+
 
 .check-text a {
     line-height: 1.4;
@@ -737,10 +745,11 @@ border-top: none;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     margin-right: 8px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-check:checked + .check-text span {
@@ -758,13 +767,14 @@ border-top: none;
     color: #FFFFFF;
     border-radius: 4px;
     padding: 16px 32px;
-    width: 169px;
+    min-width: 169px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #4D5AE5;
     border: none;
     margin: 24px auto 0;
     display: block;
-
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ================== */
