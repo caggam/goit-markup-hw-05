@@ -673,12 +673,12 @@ border-top: none;
     color: #8E8F99;
 }
 
-.modal-comment {
-    margin-bottom: 16px;
-}
-
 .modal-field {
     margin-bottom: 8px;
+}
+
+.modal-comment {
+    margin-bottom: 16px;
 }
 
 .modal-input-wrap {
@@ -741,8 +741,6 @@ border-top: none;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8E8F99;
-    
-   
     margin-bottom: 24px;
 }
 
